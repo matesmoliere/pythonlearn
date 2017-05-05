@@ -1,4 +1,4 @@
-# Ejercicio 3 de la p.40 de Pythonlearn (Charles Severance)
+# Ejercicio 3 del Capítulo 3 de Pythonlearn (Charles Severance)
 # Utilizamos try y except para gestionar cualquier error al
 # no introducir los valores requeridos
 

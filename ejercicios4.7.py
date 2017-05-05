@@ -1,10 +1,22 @@
-# Ejercicio 3 de la p.40 de Pythonlearn (Charles Severance)
+# Ejercicio 7 del Capítulo 4 de Pythonlearn (Charles Severance)
 # Utilizamos try y except para gestionar cualquier error al
 # no introducir los valores requeridos
 
 
 
 def computar_nota(nota):
+    '''
+    (float) -> str
+
+    Al introducir la nota (un valor entre 0 y 1) le
+    aplica una letra. 
+    
+    >>> computar_nota(0.6)
+    Has obtenido un B
+
+    >>> computar_nota(2)
+    Error, has proporcionado un número superior a 1.0
+    '''
 
     try:
         nota = float(nota)

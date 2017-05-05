@@ -1,7 +1,5 @@
-# Programa para convertir en mayúsculas todas las líneas en el fichero:
-# /home/admin-root/Dropbox/Programacion/python/Ejercicios/pythonlearn/mbox.txt
-
-
+# Ejercicio 1 del Capítulo 7 de Pythonlearn de Charles Severance
+# Programa para convertir en mayúsculas todas las líneas de un fichero:
 
 fname = input('Nombre de archivo: ')
 try:

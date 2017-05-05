@@ -2,17 +2,18 @@
 # Utilizamos try y except para gestionar cualquier error al
 # no introducir los valores requeridos
 
-# Programa que pide números por teclado, los suma, los cuenta y
-# halla su promedio
+# Programa que pide números por teclado, crea una lista y
+# luego imprime cuántos han sido, el mayor y el menor de
+# ellos
 
 
 print('Introduce los número que quieras para sumarlos, ')
 print('escribe la palabra "fin" para terminar')
 print('Si introduces algún caracter recibirás un mensaje de error')
 
-       
-suma = 0
-contador = 0
+
+lista = []       
+
 while True:
     try:
         linea = input('numero: ')
@@ -20,11 +21,10 @@ while True:
             break
         else:
             linea = float(linea)
-            suma = suma + linea
-            contador = contador + 1
-            media = suma/contador
+            lista.append(linea)
+            
     except:
         print('Error, no has introducido un número, vuelve a intentarlo')
-print('Los números suman:',suma,"\n"
-      'has introducido', contador,"\n"
-      'y su promedio es:', round(media,2))
+print('Has introducido:',len(lista), 'números',"\n"
+      'donde el mayor es:', max(lista),"\n"
+      'y el menor es:', min(lista))

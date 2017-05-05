@@ -1,3 +1,5 @@
+# Ejercicio 5 del Capítulo 8 de Pythonlearn de Charles Severance
+
 def filtrado():
     '''
     En este ejercicio se trata de filtrar el remitente 
@@ -23,10 +25,14 @@ def filtrado():
     if len(palabras) == 0: continue
     
     '''
-    archivo = open('mbox-corto.txt')    
+    contar = 0
+    archivo = open('mbox-short.txt')    
     for linea in archivo:
         palabras = linea.split()
         #print('Debug: ', palabras)
         if len(palabras) == 0: continue
         if palabras[0] != 'From': continue
         print(palabras[1])
+        contar += 1
+    print('Existen',contar,'correos')
+        

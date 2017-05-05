@@ -1,5 +1,9 @@
+# Ejercicio 4 del Capítulo 8 de Pythonlearn de Charles Severance
+
 def romeo():
     '''
+    (file) -> list
+
     Abrimos el archivo romeo.txt y lo leemos línea a línea.
     Separamos cada palabra de cada línea y si no está en una
     lista, la añadimos

@@ -1,7 +1,8 @@
-# Programa que busca todas las líneas que contengan X-DSPAM-Confidence: en el fichero:
-# /home/admin-root/Dropbox/Programacion/python/Ejercicios/pythonlearn/mbox.txt
-# De esas líneas extraemos los valores de 'confidence', los sumamos y hallamos la media.
-# Este archivo contiene información del tipo:
+# Ejercicio 2 del  Capítulo 7 de Pythonlearn de Charles Severance
+# Programa que busca todas las líneas que contengan X-DSPAM-Confidence:
+# en el fichero: mbox.txt
+# De esas líneas extraemos los valores de 'confidence', los sumamos y
+# hallamos la media. Este archivo contiene información del tipo:
 #--------------------------------------------------------------------------------------------------------------------------------
 # From: stephen.marquard@uct.ac.za
 # Subject: [sakai] svn commit: r39772 - content/branches/sakai_2-5-x/content-impl/impl/src/java/org/sakaiproject/content/impl
@@ -54,8 +55,7 @@ for linea in identificador_archivo:
     linea = linea.rstrip()
 
     # Descartamos las líneas que no empiecen con 'X-DSPAM-Confidence:'
-    if not linea.startswith('X-DSPAM-Confidence:'):  
-        continue
+    if not linea.startswith('X-DSPAM-Confidence:'):continue
 
     # De cada línea que contiene 'X-DSPAM-Confidence:' extraemos la parte numérica
     confidence = linea[20:]

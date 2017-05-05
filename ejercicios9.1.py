@@ -1,3 +1,6 @@
+
+# Ejercicio 1 del Capítulo 9 de Pythonlearn de Charles Severance
+
 contar = 0
 diccionario = dict()                  # Creamos un diccionario vacío
 archivo = open('words.txt')           # Abrimos el archivo

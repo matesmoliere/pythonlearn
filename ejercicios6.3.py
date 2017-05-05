@@ -1,3 +1,6 @@
+# Ejercicio 3 del Capítulo 6 de Pythonlearn (Charles Severance)
+
+
 def contar(palabra,letra):
     '''
     (string, string) -> int

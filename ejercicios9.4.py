@@ -1,3 +1,4 @@
+# Ejercicio 4 del Capítulo 9 de Pythonlearn de Charles Severance
 
 nombre = 'mbox-short.txt'
 try:
